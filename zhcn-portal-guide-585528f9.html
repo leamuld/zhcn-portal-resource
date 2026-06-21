@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pg模拟器 · 资料索引与产品说明</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+            background-color: #f5f7fb;
+            color: #1e293b;
+            line-height: 1.7;
+        }
+
+        /* 深色头图 */
+        .hero {
+            background: linear-gradient(145deg, #0f172a 0%, #1e293b 100%);
+            padding: 64px 24px 48px;
+            text-align: center;
+            color: #e2e8f0;
+            border-bottom: 4px solid #3b82f6;
+        }
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #94a3b8;
+        }
+
+        /* 正文浅色区 */
+        .container {
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 48px 24px 64px;
+        }
+
+        /* 卡片模块 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 28px;
+            margin: 40px 0;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 28px 22px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+            border: 1px solid #e9edf4;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 32px rgba(0,0,0,0.06);
+        }
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #0f172a;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #475569;
+        }
+
+        /* 强调色链接 */
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s, color 0.15s;
+        }
+        a:hover {
+            color: #1d4ed8;
+            border-bottom-color: #1d4ed8;
+        }
+
+        /* 使用建议 / 注意区块 */
+        .notice-block {
+            background: #f1f5f9;
+            border-left: 4px solid #3b82f6;
+            padding: 24px 28px;
+            border-radius: 0 16px 16px 0;
+            margin: 36px 0;
+        }
+        .notice-block strong {
+            color: #0f172a;
+        }
+
+        .faq-summary {
+            margin-top: 48px;
+            border-top: 1px solid #dce2ec;
+            padding-top: 36px;
+        }
+        .faq-summary details {
+            margin-bottom: 12px;
+            padding: 12px 16px;
+            background: #ffffff;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+        .faq-summary summary {
+            font-weight: 600;
+            cursor: pointer;
+            color: #1e293b;
+        }
+        .faq-summary details p {
+            margin-top: 10px;
+            padding-left: 8px;
+            color: #475569;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin: 48px 0 16px;
+            color: #0f172a;
+            border-left: 6px solid #3b82f6;
+            padding-left: 16px;
+        }
+
+        .inline-link-sentence {
+            background: #ffffff;
+            padding: 20px 24px;
+            border-radius: 16px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+            margin: 32px 0;
+            border: 1px solid #e9edf4;
+            font-size: 1.05rem;
+        }
+
+        /* 响应式 */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            .hero { padding: 40px 16px 32px; }
+            .container { padding: 28px 16px 48px; }
+            .card-grid { gap: 18px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 深色头图 -->
+    <header class="hero">
+        <h1>pg模拟器 · 资料整理与产品说明</h1>
+        <p>从信息索引视角，梳理工具定位、使用场景与查阅方式</p>
+    </header>
+
+    <!-- 正文浅色区 -->
+    <main class="container">
+
+        <!-- 摘要 / 切入角度 -->
+        <p style="font-size:1.1rem; margin-bottom: 24px;">
+            在模拟器类工具的资料体系中，<strong>pg模拟器</strong> 因其操作逻辑和功能边界而受到关注。 
+            以下内容基于可查阅的公开信息整理，旨在帮助使用者快速建立对其用途与限制的认知，不构成任何形式的使用担保。
+        </p>
+
+        <!-- 亮点卡片 -->
+        <h2 class="section-title">功能亮点速览</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>结构清晰</h3>
+                <p>界面与操作流程经过多次迭代，减少了冗余层级，方便使用者按步骤完成模拟流程。</p>
+            </div>
+            <div class="card">
+                <h3>参数可调</h3>
+                <p>支持核心参数的适度调整，满足不同熟练度使用者对运行环境的微调需求。</p>
+            </div>
+            <div class="card">
+                <h3>日志反馈</h3>
+                <p>内置运行日志记录模块，便于回溯操作步骤与状态变化，辅助问题定位。</p>
+            </div>
+            <div class="card">
+                <h3>持续维护</h3>
+                <p>项目保持定期更新，修复已知问题并优化兼容性，版本信息可查阅对应文档。</p>
+            </div>
+        </div>
+
+        <!-- 使用建议 -->
+        <h2 class="section-title">使用建议与注意事项</h2>
+        <div class="notice-block">
+            <p><strong>建议一：</strong> 初次使用前，建议先阅读官方或社区整理的基础指引，明确模拟范围与系统要求，避免因参数不当导致运行时异常。</p>
+            <p style="margin-top: 16px;"><strong>建议二：</strong> 留意版本更新日志，部分功能调整可能影响已有配置，定期备份用户数据或配置文件是值得养成的习惯。</p>
+            <p style="margin-top: 16px;"><strong>建议三：</strong> 遇到异常行为时，优先查看内置日志，并尝试在隔离环境中复现，以排除环境干扰因素。</p>
+        </div>
+
+        <!-- 场景化信息索引（代替常见“特点”） -->
+        <h2 class="section-title">适用场景与边界</h2>
+        <p>
+            从资料索引角度看，<strong>pg模拟器</strong> 常出现在需要快速搭建测试环境、验证操作逻辑、或进行功能预研的场景中。 
+            它并不承诺覆盖所有生产级别需求，因此在涉及数据持久性或高并发验证时，建议结合真实环境进行交叉验证。
+        </p>
+        <p style="margin-top: 20px;">
+            此外，不同操作系统下的表现可能存在细微差异，社区论坛中常有针对特定系统的配置讨论，可作为补充参考。
+        </p>
+
+        <!-- 可信但克制的访问说明 —— 自然嵌入 a 标签 -->
+        <div class="inline-link-sentence">
+            <p>如果需要获取最新的版本信息与使用文档，可以通过 <a href="https://zhcn-portal-pg.com">pg模拟器</a> 的官方资料页面进行查阅，页面内容会随版本迭代同步更新。</p>
+        </div>
+
+        <!-- FAQ 摘要 -->
+        <div class="faq-summary">
+            <h2 class="section-title" style="border-left-color: #64748b; margin-top: 0;">常见问题摘要</h2>
+
+            <details>
+                <summary>pg模拟器 是否需要安装额外依赖？</summary>
+                <p>基础运行环境通常无需额外组件，但部分高级功能可能依赖系统库或运行时框架，具体可参考对应版本的 release notes。</p>
+            </details>
+
+            <details>
+                <summary>日志文件默认保存在什么位置？</summary>
+                <p>日志默认存储在程序所在目录下的 logs 文件夹中，文件名包含生成时间戳，便于按时间筛选。</p>
+            </details>
+
+            <details>
+                <summary>能否在无网络环境下使用？</summary>
+                <p>核心模拟功能完全离线可用，但首次启动时可能检测必要组件，建议首次运行前完成一次完整的在线启动。</p>
+            </details>
+
+            <details>
+                <summary>是否有社区或用户交流渠道？</summary>
+                <p>社区讨论主要集中在 GitHub Issues 及部分技术论坛，建议优先搜索已有话题，避免重复提问。</p>
+            </details>
+        </div>
+
+        <!-- 结尾：知识型收束 -->
+        <p style="margin-top: 48px; color: #64748b; font-size: 0.95rem; border-top: 1px solid #e2e8f0; padding-top: 28px;">
+            本页内容仅作为资料索引与产品说明，所有信息均基于公开可查的材料整理，不构成对工具性能或适用性的任何明示或暗示保证。 
+            使用者应根据自身需求进行独立评估。
+        </p>
+
+    </main>
+</body>
+</html>
